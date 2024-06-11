@@ -28,7 +28,7 @@ final class Configuration implements ConfigurationInterface
             ->children()
                 ->integerNode('ttl')
                     ->defaultValue(self::DEFAULT_TTL)
-                    ->example(1800)
+                    ->example('1800')
                     ->info('Define the Time To Live (TTL) in seconds for a product reservation. Setting to 0 disables this check, all carts will be taken in account for an indefinite period.')
                 ->end()
             ->end()
